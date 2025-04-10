@@ -28,14 +28,19 @@
         </section>
         
         <section id="result-section" style="display: none;">
-            <div id="loading">分析中，請稍候...</div>
+            <div id="loading">
+                <p>分析中，請稍候...</p>
+                <div class="progress-bar">
+                    <div id="progress-indicator"></div>
+                </div>
+            </div>
             <div id="result-content"></div>
             <button id="back-button">分析新圖片</button>
         </section>
     </main>
     
     <footer>
-        <p>© 2025 寶可夢 Sleep 分析器 - 非官方工具</p>
+        <p>© 2025 寶可夢 Sleep 分析器 - 非官方工具 | <a href="https://github.com/poyi41/pokemon-sleep-analyzer" target="_blank">查看源碼</a></p>
     </footer>
     
     <script src="script.js"></script>
