@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寶可夢 Sleep 分析器</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>寶可夢 Sleep 截圖分析</h1>
+        <p>上傳您的寶可夢截圖，獲取即時分析</p>
+    </header>
+    
+    <main>
+        <section id="upload-section">
+            <div class="upload-container">
+                <div id="preview-area">
+                    <img id="preview-image" src="#" alt="預覽" style="display: none;">
+                    <div id="drop-zone">
+                        <p>拖放截圖到這裡<br>或點擊上傳</p>
+                    </div>
+                </div>
+                <input type="file" id="file-input" accept="image/*" hidden>
+                <button id="upload-button">選擇截圖</button>
+            </div>
+        </section>
+        
+        <section id="result-section" style="display: none;">
+            <div id="loading">分析中，請稍候...</div>
+            <div id="result-content"></div>
+            <button id="back-button">分析新圖片</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 寶可夢 Sleep 分析器 - 非官方工具</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
